@@ -1,0 +1,25 @@
+LAB-5 13 aug
+// on mac couldn't locate proc files so have to do it on linux lab pc
+Command taught
+
+man ps
+ps
+ps -e|head
+ps -e|grep firefox
+top
+ps -ejH
+// gives PID, PGID, SID TTY, TIME CMD
+ps- eLF
+// gives UID, PID, PPID, LWP, C, NLWP, SZ, RSS PSR, STIME, TTY, TIME, CMD
+ps aux
+// give USER, PID, %CPU, %MEM, VSZ, RSS, TTY, STAT, START, TIME, COMMAAND
+
+Procedure to follow to locate proc and stat file in linux starting from root 
+cd /proc
+ls
+cd XXXX
+ls
+cat stat
+
+Aim of the lab
+To display the stat of all directory in proc section 
