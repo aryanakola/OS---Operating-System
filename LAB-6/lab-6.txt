@@ -1,0 +1,14 @@
+pipe is a communication channel
+for interprocess command
+unidirectional communication
+ex : ls -l | grep
+
+
+till now we were creating unnamed pipe (after complition of 5 question)
+using command : mkfifo <name of pipe>
+to open manual page : man 2 mkfifo
+// mkfifo is also library function
+ls -l <name of pipe> // to locate pipe
+tail -f <name of pipe> // to turn on read end of the pipe on terminal
+// from new terminal
+echo "adbjshdasd" > <pipe name> // will write from write end 
