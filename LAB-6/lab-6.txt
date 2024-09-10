@@ -12,3 +12,6 @@ ls -l <name of pipe> // to locate pipe
 tail -f <name of pipe> // to turn on read end of the pipe on terminal
 // from new terminal
 echo "adbjshdasd" > <pipe name> // will write from write end 
+
+pipefd[0] -> read
+pipefd[1] -> write
