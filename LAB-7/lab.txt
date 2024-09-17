@@ -1,0 +1,21 @@
+replaces current process images with the new process image  
+
+execl ->list of arg (n argument will be pass)
+execv -> array of arg
+execve -> array of arg + env variables
+
+execl("/bin/ls","ls","-l",NULL)
+//("path","name of the process")
+
+// dummy prog 
+pf("hello")
+execl("/bin/ls","ls","-l",NULL)
+pf("hello")
+
+// output of the dummy prog is:
+hello 
+* the output of the execl *
+-> the last hello wont be outputed as process image is replaced
+
+
+man dup
